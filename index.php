@@ -9,14 +9,20 @@
 <!-- Stampare a schermo il paragrafo e la sua lunghezza. -->
 <p> 
     <?php 
-        echo str_replace($badWord, '***', $message) 
+        echo ($message) 
     ?> 
 </p>
-<p> Il paragrafo contiene 
+<p> 
+    Il paragrafo contiene 
     <?php
         echo ($len_p)
     ?>
      caratteri
 </p>
 <!-- Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare. -->
+<p> 
+    <?php 
+        echo str_replace($badWord, '***', $message) 
+    ?> 
+</p>
 
